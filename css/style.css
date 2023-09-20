@@ -1,0 +1,432 @@
+
+/* Step 2 */
+/* Reset default style */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+/* adding background to website */
+body{
+    background-image: url('../img/background-tile-1.png'); /* Adjust the path to your image */
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    
+}
+/*  navbar section start */
+
+
+.inner_main_menu {
+    margin: 0 auto;
+    width: 1170px;
+}
+.inner_main_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.inner_main_menu ul li {
+    float: none;
+    display: inline-block;
+}
+.inner_main_menu ul li:nth-child(1) {
+    float: left;
+}
+.inner_main_menu ul li:nth-child(2) {
+    float: left;
+}
+.inner_main_menu ul li:nth-child(3) {
+    float: left;
+}
+.inner_main_menu ul li a{
+    color: gray;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 20px;
+}
+
+.inner_main_menu ul li a:hover{
+    color: rgb(15, 12, 12);
+}
+
+#main_menu{
+     width: 100%;
+     position: relative;
+     padding: 59px;
+     background-color: #CAC7B8;
+}
+
+.logo_area{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 43%;
+    top: 0;
+    /* content: ; */
+    margin-left: -15px;
+}
+
+img{
+    border-radius: 50%;
+    font-size: 20px
+    
+}
+/*  navbar section end */
+
+
+
+
+/* search-info start */
+
+
+
+/* new search.info */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.sidebar{
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  background: #CAC7B8;
+  transition: all .5s ease;
+}
+.sidebar header{
+  font-size: 28px;
+  color: black;
+  line-height: 70px;
+  text-align: center;
+  background: #B7B4A9;
+  user-select: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.sidebar a{
+  display: block;
+  height: 65px;
+  width: 100%;
+  color: black;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-left: 5px solid transparent;
+  font-family: 'Open Sans', sans-serif;
+  transition: all .5s ease;
+}
+ .sidebar a:hover{
+  border-left: 5px solid #8F85B7;
+  color: #8F85B7;
+}
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  margin: 15px 30px;
+  font-size: 29px;
+  background: #262626;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  transition: all .5s ease;
+}
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+@media(max-width : 860px){
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header,#btn,#cancel{
+    display: none;
+  }
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a{
+    height: 60px;
+  }
+  .sidebar a i{
+    margin-left: -10px;
+  }
+  a:hover {
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: border-width 0.3s ease;
+}
+
+.arrow:hover{
+    border-width: 0 6px 6px 0; 
+}
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    padding: 5px;
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    padding: 5px;
+  }
+/* search-info  end*/
+
+
+/* content area start   */
+
+
+.content-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 10vh; /* Adjust height as needed; this centers the content within the viewport height */
+    text-align: center; /* Center text within the container */
+}
+
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+/* stylling dagen skrift */
+.dagens-skrift{
+    width: 100%;
+    height: auto;
+}
+
+.kor {
+    width: 100%;
+    height: auto; 
+    border-radius: 0%;
+}
+
+/* video styling nummer 1 */
+.card .hover-video {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .hover-video {
+    opacity: 1;
+}
+
+.klubber{
+   
+    border-radius: 0%;
+    padding: 10px;
+    width: 50%;
+    height: auto;
+}
+
+.row{
+    height: auto;
+    width: 80%;
+    margin: 0 auto; /* Add this line to horizontally center the element */
+    top: 250px;
+    bottom: 10px;
+}
+/* content area end   */
+
+
+/* footer are start  */
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-container div {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.footer-container h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container input[type="email"]:focus {
+    border-color: #333;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container div {
+        text-align: center;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+}
+
+
+/* footer are end  */
+
+
+
+
+
+  
+
+
+
+
+
+
+
